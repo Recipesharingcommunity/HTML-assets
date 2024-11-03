@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/grill.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section -->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        Fiery Grill, Sizzling Thrill,
+        <strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Grilled Chicken's</a
+          ></strong
+        >
+        Delight, Fulfilling Still, Flavors that Shine, a Culinary Skill.
+      </p>
+      <img
+        src="https://images.pexels.com/photos/23147806/pexels-photo-23147806/free-photo-of-close-up-photo-of-chicken-satay-street-food.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/2232433/pexels-photo-2232433.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Garlic Chicken"
+        />
+        <p>Garlic Chicken</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/6896080/pexels-photo-6896080.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Lemon Pepper Chicken"
+        />
+        <p>Lemon Pepper Chicken</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/6107762/pexels-photo-6107762.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Salt & Pepper Chicken"
+        />
+        <p>Salt & Pepper Chicken</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/25391590/pexels-photo-25391590/free-photo-of-photo-of-rotisserie-chickens.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Grill Chicken"
+        />
+        <p>Grill Chicken</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/28674534/pexels-photo-28674534/free-photo-of-delicious-indo-chinese-chilli-chicken-dish.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Chilli Chicken"
+        />
+        <p>Chilli Chicken</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1265209311/photo/fried-chicken-kebab-or-kabab.jpg?b=1&s=612x612&w=0&k=20&c=dHRKKCV9MD1mwEjthg_J8ez0I0cAzhfxy7uizK6cgjo="
+          alt="Chicken 65"
+        />
+        <p>Chicken 65</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 1/2 pounds boneless, skinless chicken breasts</li>
+        <li>6 cloves garlic, minced</li>
+        <li>1/2 cup olive oil</li>
+        <li>1 teaspoon salt</li>
+        <li>1/2 teaspoon black pepper</li>
+        <li>1/2 teaspoon paprika</li>
+        <li>1/4 teaspoon cayenne pepper (optional)</li>
+        <li>Chopped parsley or thyme for garnish</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Preheat oven to 400°F (200°C).</li>
+        <li>
+          Mix minced garlic, olive oil, salt, black pepper, paprika, and cayenne
+          pepper (if using).
+        </li>
+        <li>Place chicken breasts in a baking dish.</li>
+        <li>Brush garlic mixture evenly onto both sides of chicken.</li>
+        <li>Bake for 25-30 minutes or until cooked through.</li>
+        <li>Garnish with chopped parsley or thyme.</li>
+        <li>Serve hot.</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>4 boneless, skinless chicken breasts</li>
+        <li>2 lemons, juiced</li>
+        <li>2 tbsp black pepper</li>
+        <li>1 tsp garlic powder</li>
+        <li>1 tsp onion powder</li>
+        <li>1 tsp paprika</li>
+        <li>1/2 cup butter, melted</li>
+        <li>Salt, to taste</li>
+        <li>Chopped parsley, for garnish</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Preheat oven to 375°F (190°C).</li>
+        <li>
+          Mix lemon juice, black pepper, garlic powder, onion powder, paprika,
+          and melted butter.
+        </li>
+        <li>Season chicken with salt.</li>
+        <li>Place chicken in a baking dish; brush with lemon mixture.</li>
+        <li>Bake for 25-30 minutes or until cooked through.</li>
+        <li>Garnish with chopped parsley.</li>
+        <li>Serve hot.</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>4 boneless, skinless chicken breasts</li>
+        <li>2 tbsp salt</li>
+        <li>1 tsp black pepper</li>
+        <li>1 tsp garlic powder (optional)</li>
+        <li>1 tsp paprika (optional)</li>
+        <li>2 tbsp olive oil</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Preheat oven to 375°F (190°C).</li>
+        <li>Mix salt, black pepper, garlic powder, and paprika (if using).</li>
+        <li>Rub mixture evenly onto both sides of chicken.</li>
+        <li>Drizzle with olive oil.</li>
+        <li>Place chicken in a baking dish.</li>
+        <li>Bake for 25-30 minutes or until cooked through.</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>4 boneless, skinless chicken breasts</li>
+        <li>2 tbsp olive oil</li>
+        <li>1 tsp salt</li>
+        <li>1 tsp black pepper</li>
+        <li>1 tsp garlic powder (optional)</li>
+        <li>1 tsp paprika (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Preheat grill to medium-high heat.</li>
+        <li>
+          Mix olive oil, salt, black pepper, garlic powder, and paprika (if
+          using).
+        </li>
+        <li>Brush mixture evenly onto both sides of chicken.</li>
+        <li>Grill chicken 5-7 minutes per side or until cooked through.</li>
+        <li>Let rest 5 minutes before serving.</li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 lb chicken (cut into bite-sized pieces)</li>
+        <li>2 onions (chopped)</li>
+        <li>2 cloves garlic (minced)</li>
+        <li>1 tsp chilli flakes</li>
+        <li>1 tsp soy sauce</li>
+        <li>1 tsp tomato ketchup</li>
+        <li>Salt and pepper</li>
+        <li>Oil (for frying)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat oil in a pan.</li>
+        <li>Add onions and garlic; fry until tender.</li>
+        <li>Add chicken; cook until browned.</li>
+        <li>Add chilli flakes, soy sauce, and tomato ketchup.</li>
+        <li>Stir-fry for 5-7 minutes.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Serve hot.</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 lb boneless chicken (cut into small pieces)</li>
+        <li>1/2 cup flour</li>
+        <li>1 tsp salt</li>
+        <li>1 tsp red chili powder</li>
+        <li>1 tsp garam masala</li>
+        <li>1 tsp ginger paste</li>
+        <li>1 tsp garlic paste</li>
+        <li>1/4 cup yogurt</li>
+        <li>1/4 cup lemon juice</li>
+        <li>Oil (for frying)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Mix flour, salt, chili powder, garam masala, ginger paste, and garlic
+          paste.
+        </li>
+        <li>Add yogurt and lemon juice; mix well.</li>
+        <li>Add chicken; marinate for 30 minutes.</li>
+        <li>Fry chicken in hot oil until golden brown.</li>
+        <li>Drain excess oil.</li>
+        <li>Serve hot.</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/free-psd/grilled-chicken-isolated-transparent-background_191095-35052.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px"
+          >A Feast of Flavor, Fresh Off the Grill</strong
+        ><br />Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Grilled Chicken</strong>
+        Haven, where the sizzle of the grill meets the magic of marinades!
+        Whether you crave smoky BBQ chicken, spicy peri-peri, or a simple
+        herb-infused delight, our platform celebrates everything grilled and
+        juicy. From backyard BBQ lovers to gourmet grill masters, we bring
+        together a community of chicken enthusiasts to share recipes,
+        techniques, and their love for perfectly grilled goodness.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/grill.js"></script>
+  </body>
+</html>

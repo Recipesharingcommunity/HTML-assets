@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/chat.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section-->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "<strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Snacks</a
+          ></strong
+        >
+        aren’t just food—they’re little bursts of joy between meals. From crispy
+        to savory, every bite tells a story. Savor the moment, because life
+        tastes better with snacks!"
+      </p>
+      <img
+        src="https://images.pexels.com/photos/14693666/pexels-photo-14693666.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/grilled-vegetable-sandwich.jpg"
+          alt="Grilled vegetable sandwich"
+        />
+        <p>Grilled vegetable sandwich</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/grilled-vegetable-egg-sandwich.jpg"
+          alt=""
+        />
+        <p>Grilled vegetable egg sandwich</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/corn-cheese-sandwich.jpg"
+          alt="Corn cheese sandwich-Simpe & easy with brown bread"
+        />
+        <p>Corn cheese sandwich</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Samosa"
+        />
+        <p>Samosa</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/17184404/pexels-photo-17184404/free-photo-of-deep-fried-bread-pani-puri-with-chickpea-filling-served-with-spread.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Pani Puri"
+        />
+        <p>Pani Puri</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/2697931/pexels-photo-2697931.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Tea"
+        />
+        <p>Ginger Tea</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Bread slices – 2</li>
+        <li>Mixed veggies (tomato, cucumber, onion) – sliced</li>
+        <li>Cheese slice – 1 (optional)</li>
+        <li>Butter – for grilling</li>
+        <li>Salt & pepper – to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Layer veggies: Place veggies and cheese between the bread slices.
+        </li>
+        <li>Season: Sprinkle salt and pepper.</li>
+        <li>
+          Grill: Butter the outside of the sandwich and grill until golden
+          brown.
+        </li>
+        <li>Serve: Cut and enjoy your quick, healthy sandwich!</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Bread slices – 2</li>
+        <li>1 egg – scrambled or fried</li>
+        <li>Mixed veggies (tomato, onion, cucumber) – sliced</li>
+        <li>Butter – for grilling</li>
+        <li>Salt & pepper – to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Assemble: Place veggies and cooked egg between bread slices.</li>
+        <li>Season: Add salt and pepper.</li>
+        <li>Grill: Butter the bread and grill until crispy and golden.</li>
+        <li>Serve: Cut and enjoy your hearty sandwich!</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Brown bread slices – 2</li>
+        <li>Boiled corn – ¼ cup</li>
+        <li>Grated cheese – ¼ cup</li>
+        <li>Butter – for grilling</li>
+        <li>Salt & pepper – to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Mix filling: Combine boiled corn, grated cheese, salt, and pepper.
+        </li>
+        <li>Assemble: Spread the filling between bread slices.</li>
+        <li>Grill: Butter the outside and grill until golden brown.</li>
+        <li>Serve: Slice and enjoy your cheesy, crunchy sandwich!</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups flour, 1 tsp salt</li>
+        <li>1/4 tsp baking powder, 1/4 cup ghee/oil</li>
+        <li>1/2 cup water, 1 cup peas</li>
+        <li>1 cup potatoes, boiled/mashed</li>
+        <li>1 onion, chopped</li>
+        <li>1 tsp cumin seeds, Salt, to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Mix flour, salt, baking powder.</li>
+        <li>Add ghee/oil, water; knead.</li>
+        <li>Rest 30 minutes.</li>
+        <li>Heat oil; add cumin seeds, onion, peas, potatoes.</li>
+        <li>Mix well.</li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups all-purpose flour, 1/2 cup semolina</li>
+        <li>1/4 teaspoon salt, 1/4 teaspoon baking powder</li>
+        <li>1/4 cup ghee/oil, 1/2 cup lukewarm water</li>
+        <li>
+          For filling: boiled chickpeas, potatoes, onions, Pani (spicy water)
+        </li>
+        <li>Tamarind chutney</li>
+        <li>Chopped cilantro (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Mix flour, semolina, salt, baking powder.</li>
+        <li>Add ghee/oil, water; knead.</li>
+        <li>Rest 30 minutes.</li>
+        <li>Divide into small portions; shape into puris.</li>
+        <li>Fry until crispy.</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1-inch piece of fresh ginger</li>
+        <li>2 cups water</li>
+        <li>1 teaspoon tea leaves (optional)</li>
+        <li>1 tablespoon honey (optional)</li>
+        <li>Lemon slices (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Peel and chop ginger into thin slices.</li>
+        <li>In a pot, boil water and add ginger.</li>
+        <li>Reduce heat; simmer 5-7 minutes.</li>
+        <li>Strain tea into cups.</li>
+        <li>Add tea leaves (if using); steep 2-3 minutes.</li>
+        <li>Add honey (if using); stir.</li>
+        <li>Serve hot with lemon slices (if desired).</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/premium-psd/grilled-cheese-sandwich-with-tomato-lettuce_191095-59233.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px">Where Snacks Meet Stories</strong><br />
+        Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Snacks</strong>
+        Community, a vibrant space that celebrates the joy of sandwiches, chaat,
+        and tea—the perfect trifecta of quick bites and refreshing sips. Whether
+        it’s a cheesy grilled sandwich, a plate of tangy golgappas, or a
+        steaming cup of chai, we believe that great conversations and memories
+        are born over delicious snacks. Our mission is to bring together food
+        enthusiasts to explore, share, and enjoy these beloved favorites from
+        around the world.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/chat.js"></script>
+  </body>
+</html>

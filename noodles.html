@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/noodles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section -->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "Stirring Up Flavors, Stirring Up Memories" "Where Every
+        <strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Noodle</a
+          ></strong
+        >
+        Tells a Story" "Taste the Tradition, Taste the Joy"
+      </p>
+      <img
+        src="https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/2092906/pexels-photo-2092906.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Prawn Noodles"
+        />
+        <p>Prawn Noodles</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/2764905/pexels-photo-2764905.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Vegetable Noodles"
+        />
+        <p>Vegetable Noodles</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/6646021/pexels-photo-6646021.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Chicken Noodles"
+        />
+        <p>Chicken Noodles</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1190989216/photo/penne-pasta-with-white-sauce-and-truffle-italian-food.jpg?b=1&s=612x612&w=0&k=20&c=ddD2IJS3VETCumnO4RT0hFgxr4ME2S8xzgMIXmkfxaM="
+          alt="Cheese Pasta"
+        />
+        <p>Cheese Pasta</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/1150447/pexels-photo-1150447.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Pasta Prawn"
+        />
+        <p>Pasta Prawn</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/14737/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+          alt="Pasta With Sause"
+        />
+        <p>Pasta with Sause</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>200g prawns, peeled and deveined</li>
+        <li>200g noodles (rice or egg)</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon grated ginger</li>
+        <li>1 tablespoon soy sauce</li>
+        <li>1 tablespoon oyster sauce (optional)</li>
+        <li>1 tablespoon tomato sauce</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped scallions and lemon wedges for garnish</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook noodles according to package instructions.</li>
+        <li>Heat oil in a wok or large skillet.</li>
+        <li>
+          Add onion, garlic, and ginger; stir-fry until onion is translucent.
+        </li>
+        <li>Add prawns; stir-fry until pink.</li>
+        <li>
+          Add soy sauce, oyster sauce (if using), and tomato sauce; stir-fry.
+        </li>
+        <li>Combine cooked noodles and prawn mixture.</li>
+        <li>Season with salt and pepper.</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>200g noodles (egg or rice)</li>
+        <li>2 cups mixed vegetables (e.g., cabbage, carrots, bell peppers)</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tablespoon vegetable oil</li>
+        <li>1 teaspoon soy sauce</li>
+        <li>1 teaspoon tomato sauce</li>
+        <li>Salt and pepper to taste</li>
+        <li>
+          Optional: scallions, chili flakes, protein (e.g., tofu, chicken)
+        </li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook noodles according to package instructions.</li>
+        <li>Heat oil in a wok or large skillet.</li>
+        <li>Add onion and garlic; stir-fry until onion is translucent.</li>
+        <li>Add mixed vegetables; stir-fry until tender.</li>
+        <li>Add cooked noodles, soy sauce, and tomato sauce; stir-fry.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Garnish with scallions and serve hot.</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>200g noodles (egg or rice)</li>
+        <li>
+          250g boneless, skinless chicken breast, cut into bite-sized pieces
+        </li>
+        <li>2 cups mixed vegetables (e.g., cabbage, carrots, bell peppers)</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tablespoon vegetable oil</li>
+        <li>1 teaspoon soy sauce</li>
+        <li>1 teaspoon oyster sauce (optional)</li>
+        <li>1 teaspoon chicken seasoning</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook noodles according to package instructions.</li>
+        <li>Heat oil in a wok or large skillet.</li>
+        <li>Add onion and garlic; stir-fry until onion is translucent.</li>
+        <li>Add chicken; cook until browned and cooked through.</li>
+        <li>Add mixed vegetables; stir-fry until tender.</li>
+        <li>
+          Add cooked noodles, soy sauce, oyster sauce (if using), and chicken
+          seasoning; stir-fry.
+        </li>
+        <li>Season with salt and pepper.</li>
+        <li>Serve hot, garnished with chopped scallions.</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>250g pasta (e.g., penne, fusilli, or macaroni)</li>
+        <li>2 cups grated cheese (e.g., cheddar, mozzarella, parmesan)</li>
+        <li>1 cup grated ricotta cheese (optional)</li>
+        <li>1/4 cup butter</li>
+        <li>1/2 cup all-purpose flour</li>
+        <li>1 cup milk</li>
+        <li>Salt and pepper to taste</li>
+        <li>Optional: garlic, herbs (e.g., basil, parsley), ham or bacon</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook pasta according to package instructions.</li>
+        <li>Melt butter in a saucepan.</li>
+        <li>Add flour; whisk to make a roux.</li>
+        <li>Gradually add milk; whisk until smooth.</li>
+        <li>Add grated cheese; stir until melted.</li>
+        <li>
+          Combine cooked pasta, cheese sauce, and ricotta cheese (if using).
+        </li>
+        <li>Season with salt, pepper, and optional ingredients.</li>
+        <li>Transfer to baking dish; top with extra cheese.</li>
+        <li>Bake at 180°C (350°F) for 20-25 minutes or until golden brown.</li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>250g pasta (e.g., spaghetti, linguine, fettuccine)</li>
+        <li>200g prawns, peeled and deveined</li>
+        <li>2 tablespoons olive oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon lemon zest</li>
+        <li>2 tablespoons lemon juice</li>
+        <li>1 teaspoon paprika</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped parsley or basil for garnish</li>
+        <li>Grated Parmesan cheese (optional)</li>
+      </ul>
+
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook pasta according to package instructions.</li>
+        <li>Heat olive oil in a large skillet.</li>
+        <li>Add garlic; sauté for 1 minute.</li>
+        <li>Add prawns; cook until pink (2-3 minutes per side).</li>
+        <li>Add lemon zest, lemon juice, and paprika.</li>
+        <li>Toss cooked pasta with prawn mixture.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Garnish with parsley or basil.</li>
+        <li>Serve with Parmesan cheese (if using).</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Cook pasta according to package instructions.</li>
+        <li>Heat olive oil in a large skillet.</li>
+        <li>Add onion and garlic; sauté until softened.</li>
+        <li>Add tomato sauce, basil, and oregano.</li>
+        <li>Simmer sauce for 10-15 minutes.</li>
+        <li>Combine cooked pasta and sauce.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Serve with Parmesan cheese (if using).</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Arrabbiata Sauce: add red pepper flakes for spice</li>
+        <li>Pesto Sauce: use basil, garlic, and olive oil</li>
+        <li>Carbonara Sauce: use bacon, eggs, and Parmesan cheese</li>
+        <li>Alfredo Sauce: use butter, cream, and Parmesan cheese</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/premium-psd/noodles-with-vegetables-chicken-meat-form-tornado-with-sticks-white-background_84443-10491.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px"
+          >Twisting Flavors Noodle, One Strand at a Time</strong
+        ><br />
+        Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Noodle</strong> Network,
+        where every slurp tells a story! From silky ramen bowls to stir-fried
+        chow mein, spicy pad Thai, and homemade spaghetti, we celebrate the
+        world of noodles in all its shapes, flavors, and traditions. Whether
+        you’re a noodle newbie or a seasoned pasta pro, this is the perfect
+        space to explore, create, and share your love for one of the world’s
+        most beloved comfort foods.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/noodles.js"></script>
+  </body>
+</html>

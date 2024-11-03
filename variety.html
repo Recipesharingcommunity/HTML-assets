@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/variety.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section-->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "Flavors intertwined, grains divine,
+        <strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Variety Rice
+          </a></strong
+        >, a culinary design."
+      </p>
+      <img
+        src="https://media.istockphoto.com/id/1250567402/photo/table-top-view-of-indian-food.jpg?b=1&s=612x612&w=0&k=20&c=n2bAkONqFXuAYC6yW3xcxyZbl22OQLlqUiUYWwL2pRE="
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1292433146/photo/healthy-homemade-fried-rice.jpg?b=1&s=612x612&w=0&k=20&c=kAey-tY9F5VDa396fjPv1TiqtFGy0sc10gDPPRTjDwo="
+          alt="Tomato Rice"
+        />
+        <p>Tomato Rice</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/670526200/photo/poha-indian-snacks.jpg?b=1&s=612x612&w=0&k=20&c=lbOryJV9a9nGvurAtFKgSeGsAv_lqrmCvq6p9E-XRAE="
+          alt="Lemon Rice"
+        />
+        <p>Lemon Rice</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1645803443/photo/plain-pulao-or-polao-with-fried-onion-basmati-chawal-served-in-dish-isolated-on-background.jpg?b=1&s=612x612&w=0&k=20&c=4vuKRdSm_FS8yWXAxtmjQfx8raTVTFpla7Z1wR18VUI="
+          alt="Ghee Rice"
+        />
+        <p>Ghee Rice</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/651030312/photo/coconut-rice-south-indian-one-pot-meal-using-leftover-rice-coconut-and-nuts.jpg?b=1&s=612x612&w=0&k=20&c=a9Hxt9GY5U924-PeyLC3v3hbzx0BwHPcA_aJR8QXZX8="
+          alt="Coconut Rice"
+        />
+        <p>Coconut Rice</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1432250420/photo/tamarind-poha-or-puli-aval.jpg?b=1&s=612x612&w=0&k=20&c=dzK7GhavnoRgtJH1mmRbetrkoOYnyxBzIhxCqkRW13M="
+          alt="Tamarind Rice"
+        />
+        <p>Tamarind Rice</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/28674713/pexels-photo-28674713/free-photo-of-delicious-indian-jeera-rice-in-ladle.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Cumin Rice"
+        />
+        <p>Cumin Rice</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups cooked rice</li>
+        <li>3-4 medium tomatoes, diced</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tsp cumin seeds</li>
+        <li>1 tsp coriander powder</li>
+        <li>Salt, to taste</li>
+        <li>2 tbsp oil</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat oil, add cumin seeds.</li>
+        <li>Sauté onion, garlic, and tomatoes.</li>
+        <li>Add coriander powder and salt.</li>
+        <li>Mix with cooked rice.</li>
+        <li>Garnish with cilantro.</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups cooked rice</li>
+        <li>2 lemons (juiced)</li>
+        <li>1/2 cup onion (chopped)</li>
+        <li>1 tsp mustard seeds</li>
+        <li>1 tsp cumin seeds</li>
+        <li>Salt (to taste)</li>
+        <li>2 tbsp oil/ghee</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat oil/ghee.</li>
+        <li>Add mustard seeds, cumin seeds.</li>
+        <li>Sauté onion.</li>
+        <li>Mix lemon juice, salt.</li>
+        <li>Combine cooked rice.</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups basmati rice</li>
+        <li>2 tbsp ghee (clarified butter)</li>
+        <li>1 tsp cumin seeds</li>
+        <li>1 tsp coriander seeds</li>
+        <li>Salt, to taste</li>
+        <li>2 cups water</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat ghee in a pan.</li>
+        <li>Add cumin seeds, coriander seeds.</li>
+        <li>Sauté until fragrant.</li>
+        <li>Add rice, salt.</li>
+        <li>Mix well.</li>
+        <li>Add water.</li>
+        <li>Cook until rice is tender.</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups cooked rice (preferably day-old)</li>
+        <li>1 cup grated coconut</li>
+        <li>2 tbsp coconut oil</li>
+        <li>1 tsp cumin seeds</li>
+        <li>1 tsp coriander seeds</li>
+        <li>Salt, to taste</li>
+        <li>1 tsp lemon juice (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat coconut oil in a pan.</li>
+        <li>Add cumin seeds, coriander seeds.</li>
+        <li>Sauté until fragrant.</li>
+        <li>Add grated coconut.</li>
+        <li>Cook until lightly toasted.</li>
+        <li>Mix with cooked rice.</li>
+        <li>Season with salt.</li>
+        <li>Add lemon juice (if using).</li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups cooked rice (preferably day-old)</li>
+        <li>1/2 cup tamarind paste</li>
+        <li>2 tbsp vegetable oil</li>
+        <li>1 tsp mustard seeds</li>
+        <li>1 tsp cumin seeds</li>
+        <li>1 tsp coriander powder</li>
+        <li>Salt, to taste</li>
+        <li>Chopped cilantro (for garnish)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat oil in a pan.</li>
+        <li>Add mustard seeds, cumin seeds.</li>
+        <li>Sauté until fragrant.</li>
+        <li>Add tamarind paste, coriander powder.</li>
+        <li>Cook for 2-3 minutes.</li>
+        <li>Mix with cooked rice.</li>
+        <li>Season with salt.</li>
+        <li>Garnish with cilantro.</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>2 cups basmati rice</li>
+        <li>1 tsp cumin seeds</li>
+        <li>2 tbsp ghee or oil</li>
+        <li>1 tsp coriander powder (optional)</li>
+        <li>Salt, to taste</li>
+        <li>2 cups water</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat ghee/oil in a pan.</li>
+        <li>Add cumin seeds.</li>
+        <li>Sauté until fragrant.</li>
+        <li>Add rice, salt.</li>
+        <li>Mix well.</li>
+        <li>Add water.</li>
+        <li>Cook until rice is tender.</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/free-psd/jollof-isolated-transparent-background_191095-39808.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px"
+          >A World of Flavors Variety Rice in Every Grain</strong
+        ><br />
+        Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Variety Rice</strong>
+        Community, a place where food lovers gather to celebrate the simplicity
+        and magic of rice transformed into countless delicious forms. From
+        classic lemon rice to exotic pulao and flavorful fried rice, we embrace
+        the diversity of rice-based dishes that bring joy to plates around the
+        world. Whether you’re craving comfort food or looking for a quick meal
+        idea, our platform is your go-to destination for discovering, sharing,
+        and enjoying the wonderful world of variety rice.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/variety.js"></script>
+  </body>
+</html>

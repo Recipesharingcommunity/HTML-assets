@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/biriyani.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section-->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "Life is like
+        <strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Biriyani</a
+          ></strong
+        >, a mix of flavors and textures, making every bite a surprise."
+      </p>
+      <img
+        src="https://media.istockphoto.com/id/1857353239/photo/haydrabadi-biriyani.jpg?b=1&s=612x612&w=0&k=20&c=jie6ehs4ojWas98Yu07PXt6_VMRHc_Ai_qABAWI8hFk="
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/16020573/pexels-photo-16020573/free-photo-of-rice-and-chicken-meal-on-the-plate.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Chicken Biriyani"
+        />
+        <p>Chicken Biriyani</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/9609863/pexels-photo-9609863.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Mutton Biriyani"
+        />
+        <p>Mutton Biriyani</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1277579909/photo/egg-biryani.jpg?b=1&s=612x612&w=0&k=20&c=zOUkyDPsm6HDRpOLmgbM-9sIuVEkDihnx9YsSd9BMiA="
+          alt="Egg Biriyani"
+        />
+        <p>Egg Biriyani</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1163698861/photo/vegetarian-paneer-biryani-at-light-blue-background.jpg?b=1&s=612x612&w=0&k=20&c=WXmlnDCHRgldgmvzwfUdXJuiK21TVYekundjCLIKmDw="
+          alt="Simple tomato biryani"
+        />
+        <p>Simple tomato biryani</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1355635210/photo/pilau-or-vegetable-biryani.jpg?b=1&s=612x612&w=0&k=20&c=8UK0h1DxYqfImnsB2frw62DtDZBBjDz8vfOUrv-UVNY="
+          alt="Vegetable Biryani"
+        />
+        <p>Vegetable Biryani</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/15059056/pexels-photo-15059056/free-photo-of-a-bowl-of-rice-with-vegetables-and-sauce.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Kuska biryani"
+        />
+        <p>Kuska biryani</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 lb chicken</li>
+        <li>2 cups basmati rice</li>
+        <li>2 tbsp oil</li>
+        <li>1 tsp cumin seeds</li>
+        <li>1 tsp turmeric</li>
+        <li>1 tsp chili powder</li>
+        <li>Salt</li>
+        <li>2 onions</li>
+        <li>2 cloves garlic</li>
+        <li>2 cups water</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Marinate chicken</li>
+        <li>Cook rice</li>
+        <li>Sauté onions, garlic</li>
+        <li>Add chicken, spices</li>
+        <li>Layer rice, chicken</li>
+        <li>Steam</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 kg mutton, cut into small pieces, 2 cups basmati rice</li>
+        <li>2 tbsp ghee/oil, 1 tsp cumin seeds</li>
+        <li>1 tsp coriander seeds, 1 tsp turmeric</li>
+        <li>1 tsp red chili powder, 1 tsp garam masala</li>
+        <li>1 tsp salt, 2 cups water</li>
+        <li>2 onions, chopped, 2 cloves garlic, minced</li>
+        <li>1 tsp ginger paste, 2 tbsp lemon juice</li>
+        <li>Chopped cilantro (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Marinate mutton in yogurt, lemon juice, turmeric, chili powder, garam
+          masala, salt for 30 minutes.
+        </li>
+        <li>Heat ghee/oil, add cumin seeds, coriander seeds.</li>
+        <li>Sauté onions, garlic, ginger paste.</li>
+        <li>Add marinated mutton, cook until tender.</li>
+        <li>Cook basmati rice separately.</li>
+        <li>Layer rice, mutton mixture.</li>
+        <li>Steam until cooked.</li>
+        <li>Garnish with cilantro (optional).</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>4-6 eggs, hard-boiled and diced, 2 cups basmati rice</li>
+        <li>2 tablespoons ghee/oil, 1 teaspoon cumin seeds</li>
+        <li>1 teaspoon coriander seeds, 1 teaspoon turmeric</li>
+        <li>1 teaspoon red chili powder, 1 teaspoon garam masala</li>
+        <li>Salt, to taste, 2 cups water</li>
+        <li>1 onion, chopped, 2 cloves garlic, minced</li>
+        <li>1 teaspoon ginger paste, Chopped cilantro (optional)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook basmati rice and set aside.</li>
+        <li>Heat ghee/oil, add cumin seeds and coriander seeds.</li>
+        <li>Sauté onion, garlic and ginger paste.</li>
+        <li>Add turmeric, chili powder, garam masala and salt.</li>
+        <li>Add diced eggs and mix well.</li>
+        <li>Layer cooked rice and egg mixture.</li>
+        <li>Steam until combined.</li>
+        <li>Garnish with cilantro (optional).</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>
+          Rice – 1 cup (washed), Tomatoes – 2 (chopped), Onion – 1 (sliced)
+        </li>
+        <li>
+          Ginger-garlic paste – 1 tsp, Spices: Turmeric, chili powder, garam
+          masala – 1 tsp each
+        </li>
+        <li>Salt – to taste</li>
+        <li>Oil – 1 tbsp</li>
+        <li>Water – 2 cups</li>
+        <li>Coriander leaves – for garnish</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Sauté: Heat oil, fry onions until golden. Add ginger-garlic paste.
+        </li>
+        <li>
+          Cook tomatoes: Add chopped tomatoes, spices, and salt. Cook until
+          soft.
+        </li>
+        <li>
+          Add rice: Mix in rice and water. Cover and cook for 15 minutes on low
+          heat.
+        </li>
+        <li>
+          Garnish & serve: Fluff the rice, garnish with coriander, and enjoy
+          your quick tomato biryani!
+        </li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Rice: 1/3 cup basmati rice</li>
+        <li>Mixed Vegetables: 1/2 cup (chopped)</li>
+        <li>Onion: 1/4 small, sliced</li>
+        <li>Tomato: 1/4 small, chopped</li>
+        <li>
+          Spices: 1 clove garlic, 1/2-inch ginger, 1/2 green chili, 1/2 tsp
+          biryani masala, salt, cumin seeds, turmeric, 1 tbsp oil, 1 cup water
+        </li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Rinse & Soak: Wash rice until clear, soak for 20 minutes, then drain.
+        </li>
+        <li>
+          Cook Base: Heat oil, add cumin and onions until golden, then garlic,
+          ginger, and chili. Cook for 1 minute.
+        </li>
+        <li>
+          Add Veggies: Stir in tomato and mixed veggies; cook for 3-4 minutes.
+        </li>
+        <li>
+          Cook Rice: Add water, turmeric, masala, and salt. Boil, then add rice
+          and cook until 70% done (about 5 minutes).
+        </li>
+        <li>
+          Steam: Cover and cook on low for 10 minutes until fully cooked. Fluff
+          and serve!
+        </li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Rice: 1/3 cup basmati rice</li>
+        <li>Mixed Vegetables: 1/2 cup (carrots, peas, etc.)</li>
+        <li>Onion: 1/4 small, sliced</li>
+        <li>Tomato: 1/4 small, chopped</li>
+        <li>
+          Spices: 1 clove garlic, 1/2-inch ginger, 1/2 green chili, 1/2 tsp
+          biryani masala, 1/4 tsp turmeric, 1/2 tsp cumin seeds, salt, 1 tbsp
+          oil, 1 cup water
+        </li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Rinse & Soak: Wash the rice until clear; soak for 20 minutes and
+          drain.
+        </li>
+        <li>
+          Sauté: Heat oil, add cumin and sliced onion; cook until golden brown.
+        </li>
+        <li>
+          Add Aromatics: Stir in garlic, ginger, and green chili; cook for 1
+          minute. Add tomato and mixed veggies; cook for 3-4 minutes.
+        </li>
+        <li>
+          Cook Rice: Add water, turmeric, biryani masala, and salt. Boil, then
+          add rice; cook until 70% done (about 5 minutes).
+        </li>
+        <li>
+          Steam: Cover and cook on low for 10 minutes until fully cooked. Fluff
+          and serve!
+        </li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/premium-psd/bowl-biryani-with-chicken-pieces-transparent-background_84443-8966.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px">A Biryani Lover’s Paradise</strong
+        ><br />
+        Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Biryani</strong>
+        Community, where every grain of rice tells a story, and every dish is a
+        masterpiece. Whether it’s the rich aroma of Hyderabadi biryani, the
+        delicate layers of Lucknowi biryani, or the spicy kick of Kolkata
+        biryani, we’re here to celebrate the world’s most loved rice dish. This
+        platform brings together biryani lovers, home cooks, and chefs to
+        explore the diverse world of biryani and share their passion for this
+        iconic delicacy.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/biriyani.js"></script>
+  </body>
+</html>

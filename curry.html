@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/curry.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section-->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "
+        <strong style="color: #f17816; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >Curry</a
+          ></strong
+        >
+        is a delicious blend of spices that makes every meal special."
+      </p>
+      <img
+        src="https://images.pexels.com/photos/9609849/pexels-photo-9609849.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/5410408/pexels-photo-5410408.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Fish Curry"
+        />
+        <p>Fish Curry</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/1391459257/photo/south-indian-famous-rasam-sambar-served-in-a-traditional-mud-pot-closeup-with-selective-focus.jpg?b=1&s=612x612&w=0&k=20&c=L4WuoAffY-3AdHYqKd3FhJWcXgSDNqjpShC3YOdG6Pc="
+          alt="Sambar"
+        />
+        <p>Sambar Curry</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/669466116/photo/spicy-chick-peas-curry-or-chola-masala-or-chana-masala-or-chole-bhature-or-choley-garnished.jpg?b=1&s=612x612&w=0&k=20&c=svBnFa4nB1iel20zOBwwdBtRm_SkkxA0acguvpUndgo="
+          alt="Chana Masala"
+        />
+        <p>Chana Masala Curry</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/9609844/pexels-photo-9609844.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Butter Chicken"
+        />
+        <p>Butter Chicken Curry</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://images.pexels.com/photos/11115801/pexels-photo-11115801.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Paneer Masala"
+        />
+        <p>Paneer Masala Curry</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://media.istockphoto.com/id/652892844/photo/kerala-style-prawn-masala-at-thekkady-kerala-india.jpg?b=1&s=612x612&w=0&k=20&c=HwAMZeV5PcSy3I8Qjq6R3o0k7K1N8cnjMVvc7Vw5BHA="
+          alt="Prawn Curry"
+        />
+        <p>Prawn Curry</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Fish (1 lb)</li>
+        <li>Onions (2)</li>
+        <li>Garlic (2)</li>
+        <li>Tomato (1)</li>
+        <li>Ginger paste (1 tsp)</li>
+        <li>Curry powder (1 tbsp)</li>
+        <li>Turmeric (1 tsp)</li>
+        <li>Salt</li>
+        <li>Oil (2 tbsp)</li>
+        <li>Water (2 cups)</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cut fish into pieces.</li>
+        <li>Fry onions and garlic.</li>
+        <li>Add spices and tomato.</li>
+        <li>Add fish and water; cook 10-12 min.</li>
+        <li>Serve with rice.</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 cup split red lentils (toor dal)</li>
+        <li>2 cups water</li>
+        <li>1 onion, chopped</li>
+        <li>2 tomatoes, chopped</li>
+        <li>1 carrot, chopped</li>
+        <li>1 potato, chopped</li>
+        <li>1 drumstick (or okra)</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1/2 teaspoon turmeric</li>
+        <li>1/2 teaspoon red chili powder (optional)</li>
+        <li>Salt</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>Mustard seeds and curry leaves for tempering</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook lentils in water until soft.</li>
+        <li>Sauté onions, tomatoes, carrot, potato, and drumstick in oil.</li>
+        <li>
+          Add cumin, coriander, turmeric, chili powder (if using), and salt.
+        </li>
+        <li>Mix cooked lentils with vegetable mixture.</li>
+        <li>Temper with mustard seeds and curry leaves.</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 cup split red lentils (toor dal)</li>
+        <li>2 cups water</li>
+        <li>1 onion, chopped</li>
+        <li>2 tomatoes, chopped</li>
+        <li>1 carrot, chopped</li>
+        <li>1 potato, chopped</li>
+        <li>1 drumstick (or okra)</li>
+        <li>teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1/2 teaspoon turmeric</li>
+        <li>1/2 teaspoon red chili powder (optional)</li>
+        <li>Salt</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>Mustard seeds and curry leaves for tempering</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cook lentils in water until soft.</li>
+        <li>Sauté onions, tomatoes, carrot, potato, and drumstick in oil.</li>
+        <li>
+          Add cumin, coriander, turmeric, chili powder (if using), and salt.
+        </li>
+        <li>Mix cooked lentils with vegetable mixture.</li>
+        <li>Temper with mustard seeds and curry leaves.</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 lb boneless chicken</li>
+        <li>2 medium onions</li>
+        <li>2 cloves garlic</li>
+        <li>2 medium tomatoes</li>
+        <li>1 tsp cumin powder</li>
+        <li>1 tsp coriander powder</li>
+        <li>1/2 tsp garam masala</li>
+        <li>1/2 tsp turmeric</li>
+        <li>1/2 tsp red chili powder (optional)</li>
+        <li>Salt</li>
+        <li>2 tbsp butter</li>
+        <li>2 tbsp tomato puree</li>
+        <li>1 cup chicken broth</li>
+        <li>Fresh cilantro</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Marinate chicken in yogurt, spices (cumin, coriander, garam masala).
+        </li>
+        <li>Grill or cook chicken until done.</li>
+        <li>Sauté onions, garlic, tomatoes in butter.</li>
+        <li>Add spices, tomato puree, broth.</li>
+        <li>Add cooked chicken, simmer 10-15 min.</li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>250 gm paneer (Indian cheese), cut into cubes</li>
+        <li>2 medium onions</li>
+        <li>2 cloves garlic</li>
+        <li>2 medium tomatoes</li>
+        <li>1 tsp cumin powder</li>
+        <li>1 tsp coriander powder</li>
+        <li>1/2 tsp garam masala</li>
+        <li>1/2 tsp turmeric</li>
+        <li>1/2 tsp red chili powder (optional)</li>
+        <li>Salt</li>
+        <li>2 tbsp butter/ghee</li>
+        <li>2 tbsp tomato puree</li>
+        <li>1 cup water</li>
+        <li>Fresh cilantro</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Sauté onions, garlic, tomatoes in butter/ghee.</li>
+        <li>Add cumin, coriander, garam masala, turmeric, chili powder.</li>
+        <li>Add tomato puree, water, salt</li>
+        <li>Add paneer cubes, simmer 10-15 min.</li>
+        <li>Garnish with cilantro.</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 pound prawns (shrimp), peeled and deveined</li>
+        <li>2 medium onions, 2 cloves garlic</li>
+        <li>1 medium tomato, 1 tsp cumin powder</li>
+        <li>1 tsp coriander powder</li>
+        <li>1/2 tsp turmeric</li>
+        <li>1/2 tsp red chili powder (optional)</li>
+        <li>Salt</li>
+        <li>2 tbsp oil</li>
+        <li>1 cup coconut milk (or water)</li>
+        <li>Fresh cilantro</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Sauté onions, garlic, tomato in oil.</li>
+        <li>Add cumin, coriander, turmeric, chili powder.</li>
+        <li>Add prawns, salt, cook 2-3 min.</li>
+        <li>Add coconut milk (or water), simmer 5-7 min.</li>
+        <li>Garnish with cilantro.</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/premium-psd/fish-curry-vegetables-bowl-with-white-background_84443-13202.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px"
+          >A Flavorful Journey into the World of Curry</strong
+        ><br />
+        Welcome to The
+        <strong style="font-size: 30px; color: #f17816">Curry</strong>
+        Community, your ultimate destination for everything curry! From rich and
+        creamy kormas to fiery vindaloos, and from fragrant Thai green curries
+        to comforting Japanese kare, we celebrate the diverse and delicious
+        world of curry. Whether you’re a curry connoisseur or just starting your
+        spice journey, our platform brings together food lovers, home cooks, and
+        chefs to explore, share, and enjoy this globally beloved dish.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/curry.js"></script>
+  </body>
+</html>

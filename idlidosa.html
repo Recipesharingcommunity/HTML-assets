@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe-Sharing-Community</title>
+    <!--Landing CSS-->
+    <link rel="stylesheet" href="CSS/idlidosa.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Title icon-->
+    <link
+      rel="icon"
+      href="https://eastmanscorner.com/wp-content/uploads/2015/01/cooking-icon.png"
+    />
+    <!--Font Awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbarsection">
+      <h1>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="landing.html#foodcollection">Recipes</a></li>
+        <li><a href="#aboutus">About</a></li>
+      </ul>
+      <h1>
+        <!--Navbar Line Bars Section-->
+        <i class="fa-solid fa-bars" id="linebars"></i>
+        <a href="profile.php">
+          <i class="fa-solid fa-user" id="user"></i>
+        </a>
+      </h1>
+    </nav>
+    <!--Cookbook Thought Section-->
+    <div class="cookbook">
+      <p id="cookbookthought">
+        "Soft, fluffy
+        <strong style="color: #ff0000; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >idlis</a
+          ></strong
+        >
+        and crispy, golden
+        <strong style="color: #ff0000; font-size: 50px"
+          ><a
+            href="#foodcollections"
+            style="color: #f17816; font-size: 50px; text-decoration: none"
+            >dosas</a
+          ></strong
+        >
+        - a South Indian breakfast duo that's a match made in heaven."
+      </p>
+      <img
+        src="https://media.istockphoto.com/id/1460788317/photo/south-indian-vegetarian-breakfast.jpg?b=1&s=612x612&w=0&k=20&c=Y85m3OnJrowADnlL9eBjPm1Je11d-t6qoCvjhjCC0dk="
+        alt="Recipe_Image"
+      />
+    </div>
+    <!--Side Navbar Section-->
+    <nav class="sidenavbarsection">
+      <ul>
+        <li id="sidehome"><a href="landing.html">Home</a></li>
+        <li id="sidefood"><a href="landing.html#foodcollection">Recipes</a></li>
+        <li id="sideabout"><a href="#aboutus">About</a></li>
+      </ul>
+      <div class="xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+    <!--Search Section-->
+    <div class="search">
+      <input type="text" id="inputvalue" placeholder="Search" />
+      <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+    </div>
+    <!--Food Image Section-->
+    <div class="foodcollections" id="foodcollections">
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/thatte-idli.jpg"
+          alt="Thatte idli"
+        />
+        <p>Thatte idli</p>
+        <button onclick="show()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/schezwan-idli-pakoda.jpg"
+          alt="Schezwan idli pakoda"
+        />
+        <p>Schezwan idli pakoda</p>
+        <button onclick="showtwo()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.southindianfoods.in/recipe_picture_thumbnail/chilli-masala-solam-idli-masala-sorghum-mini-idli.jpg"
+          alt="Chilli masala solam idli"
+        />
+        <p>Chilli masala solam idli</p>
+        <button onclick="showthree()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.seema.com/wp-content/uploads/2022/09/Types-of-Dosa4.jpg"
+          alt="Cheese Dosa"
+        />
+        <p>Cheese Dosa</p>
+        <button onclick="showfour()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.seema.com/wp-content/uploads/2022/09/Types-of-Dosa6-450x674.jpg"
+          alt="Eggs Dosa"
+        />
+        <p>Eggs Dosa</p>
+        <button onclick="showfive()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+      <div class="foodcollection">
+        <img
+          src="https://www.seema.com/wp-content/uploads/2022/09/Types-of-Dosa10.jpg"
+          alt="Set Dosa"
+        />
+        <p>Set Dosa</p>
+        <button onclick="showsix()">
+          Ingredients Insight <i class="fa-solid fa-utensils"></i>
+        </button>
+      </div>
+    </div>
+    <!--Ingredients Section-->
+    <div class="ingredient">
+      <i class="fa-solid fa-xmark" id="xmark2"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Idli rice - 4 cups</li>
+        <li>Urad dal - 1 cup</li>
+        <li>Javvarisi - 1/5 cup</li>
+        <li>Fenugreek - 1 tbsp</li>
+        <li>Salt to taste</li>
+        <li>Water as needed</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Wash and Soak rice, urad dal, sago with fenugreek separately for 6
+          hours.
+        </li>
+        <li>
+          Drain water, put soaked ingredients in a mixie jar, grind to smooth
+          batter.
+        </li>
+        <li>
+          Add salt and leave the batter for fermentation [approximately. 8
+          hours].
+        </li>
+        <li>Grease thatte idli plates with gingelly oil.</li>
+        <li>Pour thatte idly batter. Then steam it for 15 min.</li>
+        <li>Serve hot with coconut chutney and Sambar.</li>
+      </ul>
+    </div>
+    <div class="ingredienttwo">
+      <i class="fa-solid fa-xmark" id="xmark3"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Leftover idli - 2 to 3</li>
+        <li>Schezwan Sauce - 2 to 3 tbsp</li>
+        <li>Rice flour - 3 tbsp</li>
+        <li>Gram flour- 4 tbsp</li>
+        <li>Asafoetida - ¼ tsp</li>
+        <li>Curry leaves - 1 spring [chopped]</li>
+        <li>Coriander leaves - 2 spings [chopped]</li>
+        <li>Salt to taste</li>
+        <li>Oil for deep frying</li>
+        <li>Water as needed [3 to 4 tbsp]</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Cut idli into cubes.</li>
+        <li>
+          In a bowl add idli cubes, schezwan sauce, gram flour, rice flour,
+          salt, coriander leaves, curry leaves, asafoetida, mix well
+        </li>
+        <li>Sprinkle 3 tbsp water, mix well.</li>
+        <li>
+          Heat oil in a pan, sprinkle idli cubes, deep fry till crisp & golden
+          brown on medium hot oil.
+        </li>
+        <li>Once its ready remove from oil & drain on absorbent paper.</li>
+        <li>Serve hot with tea or coffee</li>
+      </ul>
+    </div>
+    <div class="ingredientthree">
+      <i class="fa-solid fa-xmark" id="xmark4"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>
+          Mini sorghum idli [Solam idli, jowar idli, jolada idli] – 1 cup [10
+          idli]
+        </li>
+        <li>Onion – 1 [chopped]</li>
+        <li>Green capsicum – 2 tbsp [chopped]</li>
+        <li>Ginger – 1 tbsp [finely chopped]</li>
+        <li>Garlic – 1 tbsp [finely chopped]</li>
+        <li>
+          Tomato – 1 [chopped], Curry leaves – 1 spring, Coriander leaves – 1
+          spring
+        </li>
+        <li>
+          Turmeric powder – ¼ tsp, Red chilli powder – ½ tsp, Coriander, cumin &
+          pepper powder – 1 tbsp
+        </li>
+        <li>Garam masala – 1 tsp</li>
+        <li>Oil – 2 tbsp</li>
+        <li>Salt to taste</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Heat oil in a pan add mustard seeds & let it splutter. Then add curry
+          leaves sauté.
+        </li>
+        <li>Add onion & capsicum sauté well. Then add ginger & garlic sauté</li>
+        <li>Add tomato sauté till soft. Add water if required.</li>
+        <li>Add salt, turmeric powder, red chilli powder mix well.</li>
+        <li>
+          Add cumin, coriander, pepper powder & garam masala powder sauté.
+        </li>
+        <li>Add mini sola idli mix well.</li>
+      </ul>
+    </div>
+    <div class="ingredientfour">
+      <i class="fa-solid fa-xmark" id="xmark5"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 cup Dosa batter</li>
+        <li>½ cup grated cheese</li>
+        <li>Oil or butter for cooking</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat pan: Place a pan on medium heat.</li>
+        <li>Spread batter: Pour the batter and spread it thinly.</li>
+        <li>Add cheese: Sprinkle grated cheese on top.</li>
+        <li>Cook: Let the dosa get crispy, and cheese melt.</li>
+        <li>
+          Fold and serve: Fold the dosa in half and serve hot with chutney.
+        </li>
+      </ul>
+    </div>
+    <div class="ingredientfive">
+      <i class="fa-solid fa-xmark" id="xmark6"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>1 cup Dosa batter</li>
+        <li>1 egg</li>
+        <li>1 small onion (chopped)</li>
+        <li>Salt and pepper</li>
+        <li>Oil for cooking</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>Heat pan: Place a pan on medium heat.</li>
+        <li>Spread batter: Pour batter and spread thinly.</li>
+        <li>Add egg: Crack an egg on top, spread it evenly.</li>
+        <li>Season: Add onions, salt, and pepper.</li>
+        <li>Cook: Let it cook until crispy.</li>
+        <li>Fold and serve: Fold the dosa and serve with chutney.</li>
+      </ul>
+    </div>
+    <div class="ingredientsix">
+      <i class="fa-solid fa-xmark" id="xmark7"></i>
+      <h1>INGREDIENTS</h1>
+      <ul>
+        <li>Idli rice - 4 cups</li>
+        <li>Urad dal - 1 cup</li>
+        <li>Javvarisi - 1/5 cup</li>
+        <li>Fenugreek - 1 tbsp</li>
+        <li>Salt to taste</li>
+        <li>Water as needed</li>
+      </ul>
+      <h1>PREPARATION</h1>
+      <ul>
+        <li>
+          Wash and Soak rice, urad dal, sago with fenugreek separately for 6
+          hours.
+        </li>
+        <li>
+          Drain water, put soaked ingredients in a mixie jar, grind to smooth
+          batter.
+        </li>
+        <li>
+          Add salt and leave the batter for fermentation [approximately. 8
+          hours].
+        </li>
+        <li>Grease thatte idli plates with gingelly oil.</li>
+        <li>Pour thatte idly batter. Then steam it for 15 min.</li>
+        <li>Serve hot with coconut chutney and Sambar.</li>
+      </ul>
+    </div>
+    <hr style="margin: 30px" />
+    <!--AboutUs Section-->
+    <div class="about" id="aboutus">
+      <img
+        src="https://img.freepik.com/premium-psd/dosa-isolated-transparent-background_191095-44525.jpg?ga=GA1.1.943950442.1728618274&semt=ais_hybrid-rr-similar"
+        alt=""
+      />
+      <p style="font-size: 20px">
+        <strong style="font-size: 30px">The Ultimate Idly & Dosa</strong>
+        <br />Welcome to the
+        <strong style="font-size: 30px; color: #f17816">Idly</strong> &
+        <strong style="font-size: 30px; color: #f17816">Dosa</strong>
+        Hub, a one-stop destination for everything related to these South Indian
+        culinary treasures! Whether you're a die-hard fan of fluffy idlies, a
+        crispy dosa aficionado, or someone curious to dive into these classic
+        dishes, you’re in the right place. Our platform brings together food
+        lovers, home cooks, and chefs to share recipes, tips, and experiences
+        revolving around the humble idly and dosa.
+      </p>
+    </div>
+    <!--Copyright Section-->
+    <div class="copyright">
+      <h2>The Cookbook Corner <i class="fa-solid fa-fire-burner"></i></h2>
+      <p>Home Cooks</p>
+      <hr />
+      <p style="padding-top: 10px">
+        <i class="fa-regular fa-copyright"></i> 2024 The Cookbook Corner. All
+        Rights Reserved.
+      </p>
+    </div>
+
+    <!--
+     Bachelor's Kitchen recipes 
+    <div class="bachelor">
+      <a href="bachelor.html">
+        <button>
+          <strong>Bachelor's Kitchen recipes</strong>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+    </div>
+    -->
+    <!--Landing JavaScript-->
+    <script src="JS/idlidosa.js"></script>
+  </body>
+</html>
